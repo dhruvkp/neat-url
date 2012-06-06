@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<title>Users Database</title>
+<style type="text/css">
+body
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+a
+{
+     border-bottom: 10px dashed;
+}
+.center
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+</style>
+<body>
+<h1 align="center" style="color:#FF5500;margin-top:150px;">Keywords extraction</h1>
+<hr/>
+<form name="input" action="/keywords" method="post" style="margin-top:100px;">
+{% csrf_token %}
+<h4 align="center">Enter url of the site</h4>
+<p align="center"><input type="text" name="url" style="width:200px;"/></p>
+<p align="center"><input type="submit" value="Login" /></p>
+</form>
+</body>
+</html>
